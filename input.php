@@ -2,6 +2,8 @@
 
 function readFromConsole()
 {
+    echo "Введите числа, сумму которых хотите получить:\n";
+
     $input = explode(" ", trim(fgets(STDIN)));
     $result_input = [];
 
@@ -15,5 +17,8 @@ function readFromConsole()
 
 function getSumOfElements()
 {
-    return array_sum(readFromConsole());
+    $result = array_sum(readFromConsole());
+
+    echo "Результат: {$result}";
+    return $result;
 }

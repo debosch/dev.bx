@@ -1,6 +1,6 @@
 <?php
 
-function readFromConsole()
+function readFromConsole() : array
 {
     echo "Введите числа, сумму которых хотите получить:\n";
 
@@ -9,6 +9,13 @@ function readFromConsole()
 
     foreach($input as $value)
     {
+        if (!is_numeric($value))
+        {
+            echo "Некорректные введенные данные\n";
+            readFromConsole();
+            break;
+        }
+
         $result_input[] = (int)$value;
     }
 

@@ -57,5 +57,3 @@ function calculateTest()
     $result = calculate(1,0, '/');
     echo "Результат 1 / 0: {$result}" . ($result === false ? " passed" : " failed") . PHP_EOL;
 }
-
-calculateTest();

@@ -1,31 +1,39 @@
 <?php
 
-function readFromConsole() : array
+function readFromConsole()
 {
-    echo "Введите числа, сумму которых хотите получить:\n";
+    echo "Введите входные данные:" . PHP_EOL;
+    $input = trim(fgets(STDIN));
 
-    $input = explode(" ", trim(fgets(STDIN)));
-    $result_input = [];
-
-    foreach($input as $value)
+    switch ($input)
     {
-        if (!is_numeric($value))
-        {
-            echo "Некорректные введенные данные\n";
-            readFromConsole();
-            break;
-        }
+        case "true":
+            printResult($input);
+            return true;
 
-        $result_input[] = (int)$value;
+        case "false":
+            printResult($input);
+            return false;
+
+        case "!stop":
+            printResult("null");
+            return null;
+
+        case is_float($input):
+            printResult($input);
+            return (float)$input;
+
+        case is_numeric($input):
+            printResult($input);
+            return (int)$input;
+
+        default:
+            printResult($input);
+            return $input;
     }
-
-    return $result_input;
 }
 
-function getSumOfElements()
+function printResult($result)
 {
-    $result = array_sum(readFromConsole());
-
     echo "Результат: {$result}";
-    return $result;
 }

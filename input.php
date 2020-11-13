@@ -1,9 +1,12 @@
 <?php
 
-function readFromConsole()
+function readFromConsole($input = "")
 {
-    echo "Введите входные данные:" . PHP_EOL;
-    $input = trim(fgets(STDIN));
+    if (!$input)
+    {
+        echo "Введите входные данные:".PHP_EOL;
+        $input = trim(fgets(STDIN));
+    }
 
     switch ($input)
     {

@@ -1,23 +1,50 @@
 <?php
 
-require_once 'input.php';
+require_once 'directory_status.php';
 require_once 'tests.php';
-require_once 'calc.php';
 
-$result = readFromConsole();
-assertEquals(true, $result, 'true');
+$expectedResult = [
+    "dirs" => [
+        "TestFolder1" => [
+            "is_readable" => true,
+            "is_writable" => true,
+        ],
+        "TestFolder22" => [
+            "is_readable" => true,
+            "is_writable" => true,
+        ],
+        "TestFolder3" => [
+            "is_readable" => true,
+            "is_writable" => true,
+        ],
+        "TestFolder4" => [
+            "is_readable" => true,
+            "is_writable" => true,
+        ],
+    ],
+    "files" => [
+        "testFile1.txt" => [
+            "is_readable" => true,
+            "is_writable" => true,
+            "size" => 11250,
+        ],
+        "testFile2.txt" => [
+            "is_readable" => true,
+            "is_writable" => true,
+            "size" => 450,
+        ],
+        "testFile3.txt" => [
+            "is_readable" => true,
+            "is_writable" => true,
+            "size" => 2250,
+        ],
+        "testFile4.txt" => [
+            "is_readable" => true,
+            "is_writable" => true,
+            "size" => 4950,
+        ],
+    ]
+];
 
-$result = readFromConsole();
-assertEquals(false, $result, 'false');
-
-$result = readFromConsole();
-assertEquals(null, $result, '!stop');
-
-$result = readFromConsole();
-assertEquals(1.3, $result, '1.3');
-
-$result = readFromConsole();
-assertEquals(1, $result, '1');
-
-$result = readFromConsole();
-assertEquals("test", $result, 'test');
+$result = getDirectoryStatus("./TestDir");
+getDirectoryStatus_TEST($expectedResult, $result, "./TestDir");

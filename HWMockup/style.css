@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    color: #000000;
+    margin: 24px 0 0;
+}
+
+ul {
+    padding: 0;
+    margin: 40px 70px 0;
+    width: 400px;
+    height: 45px;
+    list-style: none;
+}
+
+div {
+    margin: 0;
+}
+
+.text {
+    font: 18px/28px Helvetica Neue, "Open Sans", sans-serif;
+}
+
+.p-first-section {
+    width: 540px;
+    height: 84px;
+}
+
+.p-second-section {
+    width: 100%;
+    height: 84px;
+    text-align: left;
+    padding-top: 24px;
+}
+
+.label {
+    font-family: bold Helvetica Neue, "Open Sans", sans-serif;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #000000;
+    margin: 0;
+}
+
+.h1-label {
+    font-size: 40px;
+    line-height: 48px;
+    width: 540px;
+    height: 96px;
+    letter-spacing: -0.5px;
+}
+
+.h2-label {
+    font-size: 56px;
+    line-height: 60px;
+    text-align: left;
+    width: 445px;
+    height: 120px;
+    padding-top: 40px;
+    letter-spacing: -1px;
+}
+
+.label.h3-label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+}
+
+.label.h4-label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.less-margin {
+    margin-top: 16px;
+}
+
+.section {
+    background: rgba(0, 101, 242, 0.12);
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 101, 242, 0.12);
+}
+
+.block {
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: top;
+    height: 380px;
+}
+
+.left-block {
+    width: 555px;
+    padding-right: 110px;
+}
+
+.filler-block {
+    width: 110px;
+}
+
+.right-block {
+    width: 555px;
+}
+
+.action-link {
+    color: #0065F2;
+    margin: 43px 357px 1px 0;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 165px 60px;
+    overflow: visible;
+}
+
+.container.header-container {
+    padding: 60px 450px;
+}
+
+.container.info-container {
+    padding: 40px 165px 174px;
+}
+
+.logo {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.logo-paypal {
+    background: url("/src/logo-paypal.svg") no-repeat center;
+}
+
+.logo-android {
+    background: url("/src/logo-android-pay.svg") no-repeat center;
+    background-position-x: 70%;
+}
+
+.logo-apple {
+    background: url("/src/logo-apple-pay.svg") no-repeat center;
+}
+
+.logo-samsung {
+    background: url("/src/logo-samsung-pay.svg") no-repeat center;
+    background-size: contain;
+    background-position-y: 60%;
+}
+
+.body-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-top: 16px;
+}
+
+.body-text li {
+    margin: 0 0 8px 0;
+}
+
+.catchy-text {
+    color: #0089f2;
+}
+
+.more-margin {
+    margin-top: 26px;
+}
+
+.stylish-ul {
+    list-style: disc;
+    margin-left: 16px;
+    margin-right: 0;
+    height: 120px;
+}
+

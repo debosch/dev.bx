@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="section">
+<div class="section header-section">
     <div class="container header-container">
         <h1 class="label h1-label">Long headline for two lines for attention and evolving</h1>
         <p class="text p-first-section">With the new AirPlay 2, you can control your home audio system and

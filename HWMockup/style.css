@@ -87,7 +87,8 @@ div {
 
 .section {
     background: #fff;
-    width: 100%;
+    min-width: 1440px;
+    max-width: 100%;
     border-bottom: 1px solid rgba(0, 101, 242, 0.12);
 }
 

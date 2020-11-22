@@ -123,6 +123,12 @@ div {
     vertical-align: bottom;
 }
 
+.action-link:hover {
+    font-size: 22px;
+    margin-right: 300px;
+    font-weight: 500;
+}
+
 .container {
     width: 1440px;
     max-width: 100%;
@@ -185,6 +191,10 @@ div {
     color: #0089f2;
 }
 
+.catchy-text:hover {
+    text-decoration: underline;
+}
+
 .more-margin {
     margin-top: 26px;
 }
@@ -194,5 +204,10 @@ div {
     margin-left: 16px;
     margin-right: 0;
     height: 120px;
+}
+
+.stylish-ul li:hover {
+    font-weight: 700;
+    padding-left: 20px;
 }
 

@@ -55,19 +55,23 @@ $result = getDirectoryStatus("./TestDir");
 getDirectoryStatus_TEST($directoryStatusExpectedResult, $result, "./TestDir");
 */
 
+$equalToMaxInput1 = [0, 0, 0, 0, 0, 0, 0, 0];
+$equalToMaxInput2 = [1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7];
+$equalToMaxInput3 = [0];
+$equalToMaxInput4 = [];
 $equalToMaxExpectedResult1 = 8;
 $equalToMaxExpectedResult2 = 6;
 $equalToMaxExpectedResult3 = 1;
 $equalToMaxExpectedResult4 = 0;
 
-$result = findEqualsToMax(readUntilStop());
+$result = findEqualsToMax($equalToMaxInput1);
 assertEquals($equalToMaxExpectedResult1, $result, "[0, 0, 0, 0, 0, 0, 0, 0]");
 
-$result = findEqualsToMax(readUntilStop());
+$result = findEqualsToMax($equalToMaxInput2);
 assertEquals($equalToMaxExpectedResult2, $result,"[1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7]");
 
-$result = findEqualsToMax(readUntilStop());
+$result = findEqualsToMax($equalToMaxInput3);
 assertEquals($equalToMaxExpectedResult3, $result,"[0]");
 
-$result = findEqualsToMax(readUntilStop());
-assertEquals($equalToMaxExpectedResult2, $result,"[]");
+$result = findEqualsToMax($equalToMaxInput4);
+assertEquals($equalToMaxExpectedResult4, $result,"[]");

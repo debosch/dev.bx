@@ -4,7 +4,7 @@ function assertEquals($expectedResult, $result, $message): bool
 {
     echo PHP_EOL;
 
-    if ((int)$expectedResult == (int)$result)
+    if ($expectedResult == $result)
     {
         echo "Test: {$message} - passed".PHP_EOL;
 
@@ -131,20 +131,5 @@ function getString($number): string
     else
     {
         return "false";
-    }
-}
-
-function findEqualsToMax_TEST($result, $expectedResult, $message="") : bool
-{
-    echo PHP_EOL;
-    if ($result === $expectedResult)
-    {
-        echo "TEST: {$message} passed".PHP_EOL;
-        return true;
-    }
-    else
-    {
-        echo "TEST: {$message} failed".PHP_EOL;
-        return false;
     }
 }

@@ -3,6 +3,9 @@
 require_once 'Tasks/directory_status.php';
 require_once 'Tasks/equal_to_max.php';
 require_once 'Tasks/tests.php';
+require_once 'Tasks/Chess/ChessFigure.php';
+require_once 'Tasks/Chess/Rook.php';
+require_once 'Tasks/Chess/Queen.php';
 
 $directoryStatusExpectedResult = [
     "dirs" => [
@@ -47,13 +50,24 @@ $directoryStatusExpectedResult = [
     ]
 ];
 
-$equalToMaxTestInput1 = [0, 0, 0, 0, 0, 0, 0, 0];
-$equalToMaxTestInput2 = [1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7];
-$equalToMaxExpectedResult1 = 8;
-$equalToMaxExpectedResult2 = 6;
-
-$result = findEqualsToMax_TEST(findEqualsToMax($equalToMaxTestInput1), $equalToMaxExpectedResult1, "[0, 0, 0, 0, 0, 0, 0, 0]");
-$result = findEqualsToMax_TEST(findEqualsToMax($equalToMaxTestInput2), $equalToMaxExpectedResult2, "[1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7]");
-
+/*
 $result = getDirectoryStatus("./TestDir");
 getDirectoryStatus_TEST($directoryStatusExpectedResult, $result, "./TestDir");
+*/
+
+$equalToMaxExpectedResult1 = 8;
+$equalToMaxExpectedResult2 = 6;
+$equalToMaxExpectedResult3 = 1;
+$equalToMaxExpectedResult4 = 0;
+
+$result = findEqualsToMax(readUntilStop());
+assertEquals($equalToMaxExpectedResult1, $result, "[0, 0, 0, 0, 0, 0, 0, 0]");
+
+$result = findEqualsToMax(readUntilStop());
+assertEquals($equalToMaxExpectedResult2, $result,"[1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7]");
+
+$result = findEqualsToMax(readUntilStop());
+assertEquals($equalToMaxExpectedResult3, $result,"[0]");
+
+$result = findEqualsToMax(readUntilStop());
+assertEquals($equalToMaxExpectedResult2, $result,"[]");

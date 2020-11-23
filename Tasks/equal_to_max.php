@@ -17,7 +17,5 @@ function findEqualsToMax($array) : int
         }
     }
 
-    echo PHP_EOL."Result: {$counter}".PHP_EOL;
-
     return $counter;
 }

@@ -1,36 +1,13 @@
 <?php
 
-function readFromConsole($input = "")
+function readFromConsole($input = "") : string
 {
     if (!$input)
     {
-
         $input = trim(fgets(STDIN));
     }
 
-    switch ($input)
-    {
-        case "true":
-            printResult($input);
-            return true;
-
-        case "false":
-            printResult($input);
-            return false;
-
-        case "!stop":
-            return null;
-
-        case is_float($input):
-            printResult($input);
-            return (float)$input;
-
-        case is_numeric($input):
-            return (int)$input;
-
-        default:
-            return $input;
-    }
+    return $input;
 }
 
 function readUntilStop() : array

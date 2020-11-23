@@ -133,3 +133,18 @@ function getString($number): string
         return "false";
     }
 }
+
+function findEqualsToMax_TEST($result, $expectedResult, $message="") : bool
+{
+    echo PHP_EOL;
+    if ($result === $expectedResult)
+    {
+        echo "TEST: {$message} passed".PHP_EOL;
+        return true;
+    }
+    else
+    {
+        echo "TEST: {$message} failed".PHP_EOL;
+        return false;
+    }
+}

@@ -4,7 +4,7 @@ function readFromConsole($input = "")
 {
     if (!$input)
     {
-        echo "Введите входные данные:".PHP_EOL;
+
         $input = trim(fgets(STDIN));
     }
 
@@ -19,7 +19,6 @@ function readFromConsole($input = "")
             return false;
 
         case "!stop":
-            printResult("null");
             return null;
 
         case is_float($input):
@@ -27,13 +26,25 @@ function readFromConsole($input = "")
             return (float)$input;
 
         case is_numeric($input):
-            printResult($input);
             return (int)$input;
 
         default:
-            printResult($input);
             return $input;
     }
+}
+
+function readUntilStop() : array
+{
+    $result = [];
+
+    echo "Введите входные данные:".PHP_EOL;
+
+    while (($input = readFromConsole()) != "stop")
+    {
+        $result[] = $input;
+    }
+
+    return $result;
 }
 
 function printResult($result)

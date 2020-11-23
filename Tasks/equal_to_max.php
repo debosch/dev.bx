@@ -6,6 +6,11 @@ $maxNumber = 0;
 
 function findEqualsToMax($array) : int
 {
+    if (count($array) < 1)
+    {
+        return 0;
+    }
+
     $maxNumber = max($array);
     $counter = 0;
 

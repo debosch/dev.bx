@@ -4,7 +4,7 @@ function assertEquals($expectedResult, $result, $message): bool
 {
     echo PHP_EOL;
 
-    if ((int)$expectedResult == (int)$result)
+    if ($expectedResult == $result)
     {
         echo "Test: {$message} - passed".PHP_EOL;
 

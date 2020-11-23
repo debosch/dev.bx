@@ -1,9 +1,10 @@
 <?php
 
-require_once 'directory_status.php';
-require_once 'tests.php';
+require_once 'Tasks/directory_status.php';
+require_once 'Tasks/equal_to_max.php';
+require_once 'Tasks/tests.php';
 
-$expectedResult = [
+$directoryStatusExpectedResult = [
     "dirs" => [
         "TestFolder1" => [
             "is_readable" => true,
@@ -46,5 +47,13 @@ $expectedResult = [
     ]
 ];
 
+$equalToMaxTestInput1 = [0, 0, 0, 0, 0, 0, 0, 0];
+$equalToMaxTestInput2 = [1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7];
+$equalToMaxExpectedResult1 = 8;
+$equalToMaxExpectedResult2 = 6;
+
+$result = findEqualsToMax_TEST(findEqualsToMax($equalToMaxTestInput1), $equalToMaxExpectedResult1, "[0, 0, 0, 0, 0, 0, 0, 0]");
+$result = findEqualsToMax_TEST(findEqualsToMax($equalToMaxTestInput2), $equalToMaxExpectedResult2, "[1, 2, 3, 4, 0, 5, 2, 1, 7, 6, 1, 7, 7, 7, 7, 7]");
+
 $result = getDirectoryStatus("./TestDir");
-getDirectoryStatus_TEST($expectedResult, $result, "./TestDir");
+getDirectoryStatus_TEST($directoryStatusExpectedResult, $result, "./TestDir");

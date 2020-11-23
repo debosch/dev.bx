@@ -14,6 +14,7 @@ function readUntilStop() : array
 {
     $result = [];
 
+    echo "Чтобы прекратить вводить числа, напишите \"stop\"".PHP_EOL;
     echo "Введите входные данные:".PHP_EOL;
 
     while (($input = readFromConsole()) != "stop")

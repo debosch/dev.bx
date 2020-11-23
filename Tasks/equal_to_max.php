@@ -4,17 +4,22 @@ require_once 'input.php';
 
 $maxNumber = 0;
 
-function findEqualsToMax($array) : int
+function findEqualsToMax($input = "") : int
 {
-    if (count($array) < 1)
+    if (!$input)
+    {
+        $input = readUntilStop();
+    }
+
+    if (count($input) < 1)
     {
         return 0;
     }
 
-    $maxNumber = max($array);
+    $maxNumber = max($input);
     $counter = 0;
 
-    foreach ($array as $number)
+    foreach ($input as $number)
     {
         if ($number == $maxNumber)
         {
@@ -24,3 +29,5 @@ function findEqualsToMax($array) : int
 
     return $counter;
 }
+
+findEqualsToMax();

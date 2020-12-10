@@ -9,7 +9,7 @@ create table book_store
 (
 	BOOK_ID int not null,
 	STORE_ID int not null,
-	PRICE DECIMAL(10, 2),
+	PRICE decimal (10, 2),
 	QUANTITY int not null default 0,
 	primary key (BOOK_ID, STORE_ID),
 	foreign key FK_BOOK_STORE_STORE (STORE_ID) references store(ID)

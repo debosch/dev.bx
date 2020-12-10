@@ -13,11 +13,11 @@ create table book_store
 	QUANTITY int not null default 0,
 	primary key (BOOK_ID, STORE_ID),
 	foreign key FK_BOOK_STORE_STORE (STORE_ID) references store(ID)
-		ON UPDATE cascade
-		ON DELETE cascade ,
+		on update restrict
+		on delete restrict,
 	foreign key FK_BOOK_STORE_BOOK (BOOK_ID) references book(ID)
-		ON UPDATE cascade
-		ON DELETE cascade
+		on update restrict
+		on delete restrict
 );
 
 insert into store (ID, CITY)

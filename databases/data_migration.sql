@@ -29,10 +29,16 @@ insert into book_store (BOOK_ID, STORE_ID, PRICE, QUANTITY)
 select ID, 1, PRICE,QUANTITY from book;
 
 insert into book_store (BOOK_ID, STORE_ID, PRICE, QUANTITY)
-select ID, 2, PRICE,QUANTITY from book;
+values (1, 2, 360, 1),
+       (2, 2, 510, 4),
+       (3, 2, 330, 2),
+       (5, 2, 675, 0);
 
 insert into book_store (BOOK_ID, STORE_ID, PRICE, QUANTITY)
-select ID, 3, PRICE,QUANTITY from book;
+values (1, 3, 355, 3),
+       (2, 3, 514, 5),
+       (4, 3, 480, 3),
+       (5, 3, 679, 0);
 
 alter table book
 	drop column PRICE;

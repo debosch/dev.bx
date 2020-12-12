@@ -108,3 +108,11 @@ $queen4 = new Queen([2, 7, 6, 2]);
 $result = $queen4->IsPossibleToMove($queen4->place, $queen4->desiredPlace);
 assertEquals(false, $result, "[2, 7, 6, 2]");
 
+$queen5 = new Queen([4, 4, 4, 4]);
+$result = $queen5->IsPossibleToMove($queen5->place, $queen5->desiredPlace);
+assertEquals(false, $result, "[1, 1, 1, 1]");
+
+$queen6 = new Queen([1, 1, 10, 1]);
+$result = $queen6->IsPossibleToMove($queen6->place, $queen6->desiredPlace);
+assertEquals(false, $result, "[1, 1, 10, 1]");
+

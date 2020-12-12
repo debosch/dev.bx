@@ -8,6 +8,10 @@ class ChessFigure implements IMovable
     public $place = [];
     public $desiredPlace = [];
 
+    private const CHESS_BOUND_MAX = 8;
+    private const CHESS_BOUND_MIN = 1;
+    private const FIGURE_COORDS_SIZE = 2;
+
     public function __construct($param = "")
     {
         if (is_array($param) && count($param) == 4)
@@ -61,6 +65,20 @@ class ChessFigure implements IMovable
         {
             return false;
         }
+    }
+
+    protected function IsOutOfBounds($place, $desiredPlace): bool
+    {
+        for ($i = 0; $i < self::FIGURE_COORDS_SIZE; $i++)
+        {
+            if ($place[$i] > self::CHESS_BOUND_MAX || $place[$i] < self::CHESS_BOUND_MIN ||
+                $desiredPlace[$i] > self::CHESS_BOUND_MAX || $desiredPlace[$i] < self::CHESS_BOUND_MIN)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     function IsPossibleToMove($from, $to) : bool

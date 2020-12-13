@@ -1,6 +1,6 @@
 #1 request
 select NAME,
-       SUM(QUANTITY)
+       COUNT(distinct ab.BOOK_ID)
 from book_store bs
 	     inner join author_book ab on bs.BOOK_ID = ab.BOOK_ID
 	     inner join author a on ab.AUTHOR_ID = a.ID
@@ -40,6 +40,6 @@ select NAME,
        bs2.QUANTITY as CHRK_QUANTITY,
        ABS(bs1.QUANTITY - bs2.QUANTITY) as VARIANCE
 from book
-	     inner join book_store bs1 on book.ID = bs1.BOOK_ID and bs1.STORE_ID = 1
-	     inner join book_store bs2 on book.ID = bs2.BOOK_ID and bs2.STORE_ID = 2
+	     left join book_store bs1 on book.ID = bs1.BOOK_ID and bs1.STORE_ID = 1
+	     left join book_store bs2 on book.ID = bs2.BOOK_ID and bs2.STORE_ID = 2
 order by NAME, KLD_QUANTITY, CHRK_QUANTITY, VARIANCE;

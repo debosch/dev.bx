@@ -36,9 +36,9 @@ group by CITY, NAME;
 
 #5 request
 select NAME,
-       bs1.QUANTITY                     as KLD_QUANTITY,
-       bs2.QUANTITY                     as CHRK_QUANTITY,
-       ABS(bs1.QUANTITY - bs2.QUANTITY) as VARIANCE
+       ifnull(bs1.QUANTITY, 0)                                as KLD_QUANTITY,
+       ifnull(bs2.QUANTITY, 0)                                as CHRK_QUANTITY,
+       ABS(ifnull(bs1.QUANTITY, 0) - ifnull(bs2.QUANTITY, 0)) as VARIANCE
 from book
 	     left join book_store bs1 on book.ID = bs1.BOOK_ID and bs1.STORE_ID = 1
 	     left join book_store bs2 on book.ID = bs2.BOOK_ID and bs2.STORE_ID = 2

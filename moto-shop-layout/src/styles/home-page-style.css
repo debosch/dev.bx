@@ -1,0 +1,177 @@
+section {
+    background: #fff;
+}
+
+a {
+    font-family: Roboto serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+h4 {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.home-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 787px;
+    margin-top: 371px;
+    z-index: 100;
+}
+
+.home-page-btn {
+    max-width: 280px;
+    padding: 21px 0 21px 0;
+    text-align: center;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 32px auto 0 auto;
+    color: #000000;
+}
+
+.home-text {
+    margin: 64px auto 0 auto;
+    max-width: 440px;
+    height: content-box;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.home-header {
+    margin: 0 auto;
+    max-width: 787px;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.home-page-bg {
+    background: no-repeat url("/moto-shop-layout/src/img/image4.jpg");
+    background-size: cover;
+    filter: brightness(46%);
+    height: 1041px;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.presentation-section {
+    max-width: 1170px;
+    margin: 0 auto 120px auto;
+}
+
+.presentation-header {
+    margin: 70px auto 0 auto;
+}
+
+.presentation-text {
+    max-width: 800px;
+    height: content-box;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #000;
+    margin: 25px auto 88px auto;
+}
+
+.custom-card {
+    border: none;
+    height: 502px;
+}
+
+.card {
+    margin-bottom: 50px;
+}
+
+.custom-link {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.custom-link:hover {
+    color: #C4C4C4;
+}
+
+.custom-row {
+    flex-direction: column;
+}
+
+.card-text-custom {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.feature-header {
+    padding: 93px 0 0 101px;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.feature-text {
+    margin-left: 104px;
+    margin-right: 46px;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.feature-img-container {
+    margin-top: 70px;
+}
+
+.feature-img {
+    border-radius: 10px;
+}
+

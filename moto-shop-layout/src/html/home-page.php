@@ -39,7 +39,7 @@
                         <img src="/moto-shop-layout/src/img/image5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text card-text-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <a href="#" class="custom-link">Learn more</a>
+                            <a href="/moto-shop-layout/src/html/detail-page.php" class="custom-link">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                         <img src="/moto-shop-layout/src/img/image7.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text card-text-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <a href="#" class="custom-link">Learn more</a>
+                            <a href="/moto-shop-layout/src/html/detail-page.php" class="custom-link">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                         <img src="/moto-shop-layout/src/img/image6.png" class="card-img card-img-custom" alt="...">
                         <div class="card-body">
                             <p class="card-text card-text-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <a href="#" class="custom-link">Learn more</a>
+                            <a href="/moto-shop-layout/src/html/detail-page.php" class="custom-link">Learn more</a>
                         </div>
                     </div>
                 </div>

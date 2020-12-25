@@ -17,13 +17,13 @@
 
     <header>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col">
-                    <div class="nav">
-                        <a href="" class="nav-link">Link 1</a>
-                        <a href="" class="nav-link">Link 2</a>
-                        <a href="" class="nav-link">Link 3</a>
-                        <a href="" class="nav-link">Link 4</a>
+                    <div class="row header-links">
+                        <a href="" class="col-lg-3 col-md-6 nav-link text-nowrap">Link 1</a>
+                        <a href="" class="col-lg-3 col-md-6 nav-link text-nowrap">Link 2</a>
+                        <a href="" class="col-lg-3 col-md-6 nav-link text-nowrap">Link 3</a>
+                        <a href="" class="col-lg-3 col-md-6 nav-link text-nowrap">Link 4</a>
                     </div>
                 </div>
                 <div class="col">

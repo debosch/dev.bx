@@ -66,11 +66,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-
+                <div class="col-6">
+                    <p class="feature-header">Feature that is amazing</p>
+                    <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <div class="col">
-
+                <div class="col-6">
+                    <div class="feature-img-container">
+                        <img src="/moto-shop-layout/src/img/image8.png" class="img-fluid feature-img" alt="">
+                    </div>
                 </div>
             </div>
         </div>

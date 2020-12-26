@@ -8,6 +8,10 @@ a {
     color: #fff;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 h4 {
     font-family: Roboto, serif;
     font-style: normal;
@@ -43,6 +47,16 @@ h4 {
     line-height: 21px;
     margin: 32px auto 0 auto;
     color: #000000;
+}
+
+.home-page-btn:hover {
+    background-color: #FEDE7D;
+    text-decoration: none;
+}
+
+.home-page-btn:active {
+    background-color: #F9C21C;
+    border: none;
 }
 
 .home-text {

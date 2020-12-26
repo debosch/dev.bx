@@ -1,0 +1,45 @@
+.wrapper {
+    height: 568px;
+    margin: 208px 0 144px 0;
+}
+
+.login-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 120px 0 140px 0;
+}
+
+.btn-start-trial {
+    width: 100%;
+    height: 64px;
+}
+
+.btn-start-trial-text {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.login-label {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 47px;
+}
+
+.login-input {
+    height: 64px;
+    padding: 8px 0 8px 16px;
+    width: 100%;
+}
+
+.black-border {
+    border: 1px solid #000;
+}

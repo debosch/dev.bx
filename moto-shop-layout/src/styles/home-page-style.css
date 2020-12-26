@@ -51,7 +51,7 @@ h4 {
 
 .home-page-btn:hover {
     background-color: #FEDE7D;
-    text-decoration: none;
+    border: none;
 }
 
 .home-page-btn:active {

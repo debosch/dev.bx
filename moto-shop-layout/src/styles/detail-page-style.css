@@ -1,0 +1,124 @@
+h1 {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140.62%;
+    color: #000000;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+tr td {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #333333;
+    max-height: 49px;
+    height: 49px;
+}
+
+.container-fluid-colored {
+    background-color: #f2f2f2;
+}
+
+.header-text {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 61px;
+    max-width: 670px;
+}
+
+ul .header-text {
+    margin: 25px 0 25px 0;
+}
+
+.header-img {
+    border-radius: 10px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 130px 0 178px 0;
+    max-width: 1170px;
+}
+
+.buy-btn-text {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+}
+
+.buy-btn {
+    max-width: 310px;
+    max-height: 64px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 78px;
+}
+
+.buy-btn-short {
+    max-width: 280px;
+    margin-top: 93px;
+}
+
+.image-wrapper {
+    padding: 0 20px 0 20px;
+    max-height: 354px;
+}
+
+table {
+    margin-top: 19px;
+}
+
+.secondary-colored {
+    background-color: #f2f2f2;
+}
+
+.table-header {
+    font-family: Roboto serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #000000;
+    max-height: 100%;
+    height: 49px;
+    width: 100%;
+}
+
+.table-text  {
+    padding-left: 13px;
+}
+
+.table-first-col {
+    max-width: 100%;
+    width: 306px;
+}
+
+.table-second-col {
+    max-width: 100%;
+    width: 861px;
+}
+
+
+
+
+
+

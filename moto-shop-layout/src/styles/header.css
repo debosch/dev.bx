@@ -23,6 +23,15 @@ header {
     margin-right: 43px;
 }
 
+.header-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.header-link:active {
+    color: #b7b7b7;
+}
+
 .header-link:last-child {
     margin-right: 0;
 }
@@ -71,4 +80,14 @@ header {
     line-height: 16px;
     text-align: center;
     color: #000000;
+}
+
+.btn-text:hover {
+    background-color: #FEDE7D;
+    border:none
+}
+
+.btn-text:active {
+    background-color: #F9C21C;
+
 }

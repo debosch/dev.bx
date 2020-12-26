@@ -84,10 +84,12 @@ header {
 
 .btn-text:hover {
     background-color: #FEDE7D;
-    border:none
 }
 
 .btn-text:active {
     background-color: #F9C21C;
+}
 
+.btn-text:focus {
+    box-shadow: none;
 }

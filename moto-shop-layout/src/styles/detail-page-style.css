@@ -65,12 +65,14 @@ ul .header-text {
 
 .buy-btn-text:hover {
     background: #FEDE7D;
-    border-color: #FEDE7D;
 }
 
 .buy-btn-text:active {
     background: #F9C21C;
-    border-color: #F9C21C;
+}
+
+.buy-btn-text:focus {
+    box-shadow: none;
 }
 
 .buy-btn {

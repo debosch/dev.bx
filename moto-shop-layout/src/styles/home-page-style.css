@@ -51,12 +51,14 @@ h4 {
 
 .home-page-btn:hover {
     background-color: #FEDE7D;
-    border: none;
 }
 
 .home-page-btn:active {
     background-color: #F9C21C;
-    border: none;
+}
+
+.home-page-btn:focus {
+    box-shadow: none;
 }
 
 .home-text {

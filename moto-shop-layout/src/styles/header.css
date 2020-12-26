@@ -17,6 +17,14 @@ header {
     align-items: center;
     color: #FFFFFF;
     text-decoration: none;
+    width: 100%;
+    max-width: 64px;
+    padding: 0;
+    margin-right: 43px;
+}
+
+.header-link:last-child {
+    margin-right: 0;
 }
 
 .logo {

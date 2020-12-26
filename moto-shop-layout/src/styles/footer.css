@@ -10,7 +10,7 @@ a {
 .sm-text {
     max-width: 417px;
     margin: 0 auto;
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -43,7 +43,7 @@ a {
 }
 
 .footer-header {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -54,7 +54,7 @@ a {
 
 
 .footer-text {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -69,7 +69,7 @@ a {
 }
 
 .logo {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     margin: 18px 0 17px 0;
     font-style: normal;
     font-weight: bold;

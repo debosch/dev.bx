@@ -3,13 +3,13 @@ section {
 }
 
 a {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     text-decoration: none;
     color: #fff;
 }
 
 h4 {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -36,7 +36,7 @@ h4 {
     max-width: 280px;
     padding: 21px 0 21px 0;
     text-align: center;
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -49,7 +49,7 @@ h4 {
     margin: 64px auto 0 auto;
     max-width: 440px;
     height: content-box;
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -61,7 +61,7 @@ h4 {
 .home-header {
     margin: 0 auto;
     max-width: 787px;
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
@@ -118,7 +118,7 @@ h4 {
 }
 
 .custom-link {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -136,7 +136,7 @@ h4 {
 }
 
 .card-text-custom {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -146,7 +146,7 @@ h4 {
 
 .feature-header {
     padding: 93px 0 0 101px;
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -159,7 +159,7 @@ h4 {
     margin-right: 46px;
     max-width: 100%;
     max-height: 100%;
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

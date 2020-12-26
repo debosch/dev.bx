@@ -1,5 +1,5 @@
 h1 {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -12,7 +12,7 @@ ul {
 }
 
 tr td {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -28,7 +28,7 @@ tr td {
 }
 
 .header-text {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -53,7 +53,7 @@ ul .header-text {
 }
 
 .buy-btn-text {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -91,7 +91,7 @@ table {
 }
 
 .table-header {
-    font-family: Roboto serif;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;

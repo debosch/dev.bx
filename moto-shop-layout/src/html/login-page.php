@@ -18,10 +18,10 @@ require_once 'moto-shop-layout/src/html/header.php';
                         <p class="login-label">Try the product out for free.</p>
                         <form>
                             <div class="mb-3">
-                                <input type="email" class="form-control login-input black-border" placeholder="email" id="inputEmail1" aria-label="email">
+                                <input type="email" class="form-control login-input custom-border" placeholder="email" id="inputEmail1" aria-label="email">
                             </div>
                             <div class="mb-3">
-                                <input type="password" class="form-control login-input black-border" placeholder="password" id="inputPassword1" aria-label="password">
+                                <input type="password" class="form-control login-input custom-border" placeholder="password" id="inputPassword1" aria-label="password">
                             </div>
                             <button type="submit" class="btn btn-start-trial-text btn-dark btn-start-trial text-center">Start free trial</button>
                         </form>

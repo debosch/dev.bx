@@ -64,6 +64,15 @@ a {
     margin-bottom: 16px;
 }
 
+.footer-text a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-text a:active {
+    color: #b7b7b7;
+}
+
 .footer-text-custom {
     margin-bottom: 13px;
 }
